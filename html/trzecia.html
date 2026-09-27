@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Moja Strona</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex; /* menu z boku + treść obok siebie */
+      min-height: 100vh;
+    }
+
+    
+    .sidebar {
+      width: 180px;
+      background-color: #8fdff3;
+      padding-top: 40px;
+      box-shadow: 3px 0 10px rgba(0,0,0,0.3); /* miękki cień */
+      position: fixed; /* zostaje na miejscu przy scrollowaniu */
+      top: 0;
+      left: 0;
+      height: 100vh;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      font-weight: 600;
+      border-radius: 10px; 
+      margin: 10px;
+      transition: 0.3s; 
+    }
+
+    .sidebar a:hover {
+      background-color: #952845;
+      color: #952845;
+      transform: scale(1.05);
+    }
+
+    
+    .content {
+      margin-left: 180px; /* miejsce na boczne menu */
+      width: calc(100% - 180px);
+    }
+
+   
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #8fdff3;
+      padding: 20px;
+    }
+
+   
+    #home {
+      background: linear-gradient(135deg, #952845, #cd365f, #ff3d94);
+    }
+
+
+    section h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    }
+
+    section p {
+      max-width: 500px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    
+    .insta-link {
+      display: inline-block;
+      background-color: rgb(185, 33, 111);
+      color: #8fdff3;
+      padding: 15px 30px;
+      border-radius: 30px; 
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* miękki cień */
+      transition: 0.3s;
+    }
+
+    .insta-link:hover {
+      background-color: #57031e;
+      color: white;
+      transform: scale(1.1);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <div class="content">
+
+    <!-- Sekcja Home -->
+    <section id="home">
+      <h1>Thank you for visiting my website</h1>
+
+      
+      <a class="insta-link" href="https://www.instagram.com/aniaaeae?stkn=OWk4Z2R3a2g5aXlh" target="INSTAGRAM">INSTA</a>
+
+      </a>
+    </section>

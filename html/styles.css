@@ -1,0 +1,35 @@
+body {
+ background: linear-gradient(to right
+ ,#FC5E90, #952845);
+margin: 10rem;
+color: #8fdff3;
+padding: 0;
+padding: 2rem;
+box-sizing: border-box;
+text-align: center;
+}
+li::marker {
+  display:inline-block;
+}
+
+.custom-button {
+    background-color: #8fdff3;
+    color: rgb(154, 0, 72);
+    padding: 10px 20px;
+    border: 3px solid rgb(154, 0, 72);
+    border-radius: 5px;
+}
+
+body { font-size: 20px;
+    font-family: helvetica;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+a:hover {
+  background-color: #cd365f;
+  font-size: 18px;
+  font-weight: extra-bold;
+}
+  
